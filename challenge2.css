@@ -1,0 +1,174 @@
+* {
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+/* Vorming grid voor upper section */
+.upperSection {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding: 2px;
+    margin-top: 20%;
+    margin-bottom: 35%;
+    /* align-items: center; */
+}
+
+/*Vormgeving upper section */
+#clock {
+    font-family: Helvetica, sans-serif;
+    color:rgb(17, 17, 63);
+    margin-top: 43%;
+    text-align: center;
+    letter-spacing: 2.5px;
+}
+
+.zon {
+    display: grid;
+    grid-area: 2 / 3 / 3 / 3;
+    width: 185px;
+    height: 185px;
+    justify-self: center;
+    margin-top: -5%;
+    border-radius: 50%;
+    background: linear-gradient(to right bottom, 
+    rgba(255, 215, 83, 1), 
+    rgba(226, 27, 27, 0.3));
+}
+
+/* Vorming grid voor lower section */
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "ad1"
+                         "ad2"
+                         "ad3"
+                         "ad4" ;
+    gap: 15px;
+    padding: 3%;
+    color: white;
+    background-color: rgb(17, 17, 63);
+    border-radius: 15px;
+}
+
+.grid-item {
+    background-color: white;
+    padding: 3%;
+}
+
+.left , .right {
+    display: inline;  
+}
+
+/* .left {
+    padding-top: 10%;
+} */
+
+.right {
+    font-weight: 250;
+    float: right;
+    padding-right: 2%;
+    /* padding-left: 40%; */
+}
+
+.wolk {
+    z-index: -2;
+    float: left;
+}
+
+/*Vormgeving glasplaat*/
+.glass { 
+    background: white;
+    background: linear-gradient(to right bottom, 
+    rgba(255, 255, 255, 0.7), 
+    rgba(255, 255, 255, 0.3));
+    border-radius: 15px;
+}
+
+
+
+/*Mobile*/
+@media only screen and (max-width: 600px) {}
+
+/*Tablet*/
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+    .zon , .clock {
+        width: 247px;
+        height: 247px;
+    }
+
+    .gridContainer {
+        display: grid;
+    }
+}
+
+
+/* Laptop (kleine desktop)*/
+@media only screen and (min-width: 1024px) and (max-width: 1598px) {
+    body{
+        background-color: pink;
+    }
+
+    .gridContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: -20%;
+        height: 10%;
+        gap: 3%;
+        padding: 2%;
+        padding-bottom: 0px;
+    }
+
+    .zon , .clock {
+        margin-top: -50%;
+        float: left;
+        width: 287px;
+        height: 287px;
+    }
+
+    #clock {
+        font-size: 250%;
+    }
+}
+
+/*Grote desktop*/
+@media only screen and (min-width: 1599px) {
+    body {
+        background-color: brown;
+    }
+
+    .gridContainer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .zon , .clock {
+        margin-top: -50%;
+        width: 387px;
+        height: 387px;
+    }
+
+    #clock {
+        font-size: 300%;
+    }
+}
+
+
+
+/* /* Achtergrond omgeving timezones */
+/* .sunrise{	
+	background-image: url("sunset.png"); 
+}
+
+.day{	
+	background-image: url("day.png"); 
+}
+
+.sunset{	
+	background-image: url("sunset.png"); 
+}
+
+.evening{	
+	background-image: url("evening.png"); 
+} */
