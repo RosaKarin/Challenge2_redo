@@ -41,7 +41,7 @@
 .gridContainer {
     display: grid;
     grid-template-columns: 1fr;
-    /* grid-template-rows: repeat(4, 1fr); */
+    grid-template-rows: repeat(4, 1fr);
     grid-template-areas: "ad1"
                          "ad2"
                          "ad3"
@@ -59,7 +59,7 @@
 }
 
 .left , .right {
-    display: inline;
+    display: inline;  
 }
 
 /* .left {
@@ -77,10 +77,6 @@
     z-index: -2;
     float: left;
 }
-
-/* .first , .second , .thirth , .fourth {
-    padding-top: 30px;
-} */
 
 /*Vormgeving glasplaat*/
 .glass { 
@@ -105,32 +101,29 @@
     z-index: -1;
     transform: scale(1);
 	animation: pulse 3s infinite;
-}
+    }
 
-@keyframes pulse {
-    0% { 
-        transform: scale(0.90);
-        box-shadow: 0 0 0 0 white;
-    }
+    @keyframes pulse {
+        0% {
+            transform: scale(0.90);
+            box-shadow: 0 0 0 0 white;
+        }
     
-    50% {
-        transform: scale(1);
-        box-shadow: 0 0 0 5px rgba(0, 0, 0, 0);
-    }
+        50% {
+            transform: scale(1);
+            box-shadow: 0 0 0 5px rgba(0, 0, 0, 0);
+        }
     
-    100% {
-         transform: scale(0.90);
-         box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        100% {
+            transform: scale(0.90);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        }
     }
-}
+
+
 
 /*Mobile*/
-@media only screen and (max-width: 600px) {
-    /* .zon {
-        margin-bottom: -50px;
-    } */
-
-}
+@media only screen and (max-width: 600px) {}
 
 /*Tablet*/
 @media only screen and (min-width: 600px) and (max-width: 1023px) {
@@ -139,27 +132,16 @@
         height: 247px;
     }
 
+    .gridContainer {
+        display: grid;
+    }
+
     .keyframe {
         width: 249px;
         height: 249px;
     }
-
-    .gridContainer {
-        display: grid;
-        grid-template-columns: 1fr;
-        /* grid-template-rows: repeat(4, 1fr); */
-        grid-template-areas: "ad1"
-                             "ad2"
-                             "ad3"
-                             "ad4" ;
-        gap: 15px;
-        padding: 3%;
-        color: white;
-        background-color: rgb(17, 17, 63);
-        border-radius: 15px;
-        margin-top: -50px;
-    }
 }
+
 
 /* Laptop (kleine desktop)*/
 @media only screen and (min-width: 1024px) and (max-width: 1598px) {
@@ -224,7 +206,7 @@
 
 
 
-/* Achtergrond omgeving timezones */
+/* /* Achtergrond omgeving timezones */
 /* .sunrise{	
 	background-image: url("sunset.png"); 
 }
