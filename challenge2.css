@@ -126,9 +126,9 @@
 
 /*Mobile*/
 @media only screen and (max-width: 600px) {
-    .zon {
+    /* .zon {
         margin-bottom: -50px;
-    }
+    } */
 
 }
 
@@ -143,10 +143,6 @@
         width: 249px;
         height: 249px;
     }
-
-    /* .zon {
-        margin-bottom: -50px;
-    } */
 
     .gridContainer {
         display: grid;
