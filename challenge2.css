@@ -81,17 +81,17 @@
 }
 
 .keyframe { 
-    width: 189px;
-    height: 189px;
+    width: 190px;
+    height: 190px;
     background: linear-gradient(to right bottom, 
     rgba(255, 215, 83, 0.7), 
     rgba(226, 27, 27, 0.3));
     border-radius: 50%;
     justify-self: center;
+    display: grid;
     grid-area: 2 / 3 / 3 / 3;
-    margin-top: -5%;
     z-index: -1;
-    transform: scale(1);
+    /* transform: scale(3); */
 	animation: pulse 3s infinite;
     }
 
@@ -164,8 +164,8 @@
 
     .keyframe{
         margin-top: -50%;
-        width: 289px;
-        height: 289px;
+        width: 294px;
+        height: 294px;
     }
 }
 
@@ -191,8 +191,8 @@
 
     .keyframe {
         margin-top: -50%;
-        width: 389px;
-        height: 389px;
+        width: 394px;
+        height: 394px;
     }
 }
 
